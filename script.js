@@ -1,12 +1,11 @@
 // begin shopping cart ----------------------------------------------------------------------
 
-const mainBody = document.querySelector('.main-body');
+const mainBodyItem = document.querySelectorAll(".main-body__item");
 
-const mainBodyBoxes = mainBody.querySelector('p');
-const mainBodyBoxesNum = mainBody.querySelector('p').value;
-
-alert(mainBodyBoxesNum);
-
-
+mainBodyItem.forEach((item) => {
+    const addToCartButton = document.createElement("button");
+    addToCartButton.textContent = "ewfoi"
+    item.appendChild(addToCartButton);
+});
 
 // end shopping cart -------------------------------------------------------------------------
