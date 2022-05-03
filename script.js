@@ -10,3 +10,11 @@ newMinusBtn.innerText = "-";
 newMinusBtn.classList.add("minus");
 div.appendChild(newMinusBtn);
 
+const NewBtn = () => {
+ const  div = document.querySelector(".box");
+ const addToCart = document.createElement("button");
+ addToCart.innerText = "Add To Cart";
+ addToCart.classList.add("updateCart");
+ div.appendChild(addToCart);
+}
+ NewBtn() 
