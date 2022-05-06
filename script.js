@@ -22,13 +22,14 @@ div.appendChild(newMinusBtn);
 
 plusBtn();
 newBtn();
-minusBtn();
+minusBtn(); 
 
-/*for(let i = 0; i < querySelectorAll(".box").length; i++) {
-  div.appendChild(newPlusBtn);
-newBtn();
-div.appendChild(newMinusBtn);
-} */
+/* const shopBtns = document.querySelectorAll(".box")
+for(let i = 0; i < shopBtns.length; i++) {
+  plusBtn();
+  newBtn();
+  minusBtn();
+}   I FELL LIKE IM SO CLOSE */
 
 /*const productBox = document.querySelectorAll(".box");
 
