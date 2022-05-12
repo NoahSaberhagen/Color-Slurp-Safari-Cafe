@@ -1,5 +1,5 @@
 const div = document.querySelector(".box");
-const newBtn = () => {
+const cartBtn = () => {
   const addToCart = document.createElement("button");
   addToCart.innerText = "Add To Cart";
   addToCart.classList.add("updateCart");
@@ -7,39 +7,33 @@ const newBtn = () => {
 };
 
 const plusBtn = () => {
-const newPlusBtn = document.createElement("button");
-newPlusBtn.innerText = "+";
-newPlusBtn.classList.add("plus");
-div.appendChild(newPlusBtn);
+  const newPlusBtn = document.createElement("button");
+  newPlusBtn.innerText = "+";
+  newPlusBtn.classList.add("plus");
+  div.appendChild(newPlusBtn);
 };
 
 const minusBtn = () => {
-const newMinusBtn = document.createElement("button");
-newMinusBtn.innerText = "-";
-newMinusBtn.classList.add("minus");
-div.appendChild(newMinusBtn);
+  const newMinusBtn = document.createElement("button");
+  newMinusBtn.innerText = "-";
+  newMinusBtn.classList.add("minus");
+  div.appendChild(newMinusBtn);
 };
 
-plusBtn();
-newBtn();
-minusBtn(); 
-
-/* const shopBtns = document.querySelectorAll(".box")
-for(let i = 0; i < shopBtns.length; i++) {
-  plusBtn();
-  newBtn();
-  minusBtn();
-}   I FELL LIKE IM SO CLOSE */
-
-/*const productBox = document.querySelectorAll(".box");
+const productBox = document.querySelectorAll(".box");
 
 for (let i = 0; i < productBox.length; i++) {
   const productBoxs = document.querySelector(".box");
   const newPlusBtn = document.createElement("button");
   newPlusBtn.innerText = "+";
   newPlusBtn.classList.add("plus");
-  productBoxs.appendChild(newPlusBtn);
+  productBox[i].appendChild(newPlusBtn);
+  const newCartBtn = document.createElement("button");
+  newCartBtn.innerText = "Add To Cart";
+  newCartBtn.classList.add("updateCart");
+  productBox[i].appendChild(newCartBtn);
+  const newMinusBtn = document.createElement("button");
+  newMinusBtn.innerText = "-";
+  newMinusBtn.classList.add("minus");
+  productBox[i].appendChild(newMinusBtn);
 }
-console.log(productBox)*/
-
-
